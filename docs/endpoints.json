@@ -1,0 +1,997 @@
+{
+	"info": {
+		"_postman_id": "dcc26daf-bfab-4531-bfc9-bc6e0c331e61",
+		"name": "Inspirathon 2021",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Accounts",
+					"item": [
+						{
+							"name": "Signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Atharv\",\n    \"email\":\"patharv77127@gmail.com\",\n    \"password\":\"123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/signup/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"signup",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Verify",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"otp\":905959\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/verify/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"verify",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"patharv77127@gmail.com\",\n    \"password\":\"123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forgot",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"patharv77127@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/forgot/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"forgot",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reset",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"otp\":392951,\n    \"npw\":\"321\",\n    \"cpw\":\"321\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/forgot/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"forgot",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resend Verify",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"patharv777@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/resend/verify/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"resend",
+										"verify",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resend Forgot",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"patharv777@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/resend/forgot/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"resend",
+										"forgot",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Restaurant",
+					"item": [
+						{
+							"name": "All Restaurants",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/restaurants/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"restaurants",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Single Restaurant",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/restaurant/08cb9e7a-e1e4-4ef5-899d-641024dafdf0/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"restaurant",
+										"08cb9e7a-e1e4-4ef5-899d-641024dafdf0",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Book Seat",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgwMzU5LCJpYXQiOjE2NDQ0MDc1NTksImp0aSI6ImMxOTg1NmQ5Y2E5YTQxY2Y5MWNhZGVjZjJlMGQ5Y2IzIiwidXNlcl9pZCI6Ijg2NTQ0MWZlLTkyMGEtNGE2NS1hZjJiLTQ0YTQ5YzIzZDY1OCJ9.7MyC7R2I6xKAoR9Hng32MHNY7tLJjj_QUuRZ4eRouGc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"restaurant_id\":\"08cb9e7a-e1e4-4ef5-899d-641024dafdf0\",\n    \"seats\":2,\n    \"timing\":\"2021-10-29 14:42:29\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/booking/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"booking",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Past bookings",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgwMzU5LCJpYXQiOjE2NDQ0MDc1NTksImp0aSI6ImMxOTg1NmQ5Y2E5YTQxY2Y5MWNhZGVjZjJlMGQ5Y2IzIiwidXNlcl9pZCI6Ijg2NTQ0MWZlLTkyMGEtNGE2NS1hZjJiLTQ0YTQ5YzIzZDY1OCJ9.7MyC7R2I6xKAoR9Hng32MHNY7tLJjj_QUuRZ4eRouGc",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/past-bookings/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"past-bookings",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Seller",
+			"item": [
+				{
+					"name": "Accounts",
+					"item": [
+						{
+							"name": "Signup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Atharv\",\n    \"phone\":1234567890,\n    \"aadhar\":1234554321234667543,\n    \"gst\":987654567890987065,\n    \"email\":\"seller1@gmail.com\",\n    \"password\":\"123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-signup/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-signup",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Verify",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"otp\":905959\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-verify/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-verify",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"seller1@gmail.com\",\n    \"password\":\"123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-login/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-login",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forgot",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"seller1@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-forgot/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-forgot",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reset",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"otp\":392951,\n    \"npw\":\"321\",\n    \"cpw\":\"321\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-forgot/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-forgot",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resend Verify",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"seller1@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-resend-verify/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-resend-verify",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resend Forgot",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\":\"patharv777@gmail.com\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-resend-forgot/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-resend-forgot",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Restaurant",
+					"item": [
+						{
+							"name": "Add Restaurant",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgyNzQzLCJpYXQiOjE2NDQ0MDk5NDMsImp0aSI6IjYyOTM3NjlmZTVjYzQzYmJiZWE4MTMwYmIzYzJiYTI2IiwidXNlcl9pZCI6ImJjOTE3Y2FkLWE2MWUtNGZkYi1hNjIzLTdmZmZhMzhkZDA3MSJ9.rfTPCbhWKTck79iYnF3iwp6MvWSOCAxIBPwmcEYKi1s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "New Restaurant",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "This is my new restaurant",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "11.432",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "12.431",
+											"type": "text"
+										},
+										{
+											"key": "town",
+											"value": "panaji",
+											"type": "text"
+										},
+										{
+											"key": "state",
+											"value": "goa",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "Near miramar beach",
+											"type": "text"
+										},
+										{
+											"key": "pincode",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"type": "file",
+											"src": "/Users/atharvparkhe/Desktop/abc.jpeg"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/restaurants/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"restaurants",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Edit Restaurant Details Copy",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgyNzQzLCJpYXQiOjE2NDQ0MDk5NDMsImp0aSI6IjYyOTM3NjlmZTVjYzQzYmJiZWE4MTMwYmIzYzJiYTI2IiwidXNlcl9pZCI6ImJjOTE3Y2FkLWE2MWUtNGZkYi1hNjIzLTdmZmZhMzhkZDA3MSJ9.rfTPCbhWKTck79iYnF3iwp6MvWSOCAxIBPwmcEYKi1s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\":\"Rasoda\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-restaurant/a6010065-d26d-45e0-b3b8-8a50281a0f88/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-restaurant",
+										"a6010065-d26d-45e0-b3b8-8a50281a0f88",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Seat",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgyNzQzLCJpYXQiOjE2NDQ0MDk5NDMsImp0aSI6IjYyOTM3NjlmZTVjYzQzYmJiZWE4MTMwYmIzYzJiYTI2IiwidXNlcl9pZCI6ImJjOTE3Y2FkLWE2MWUtNGZkYi1hNjIzLTdmZmZhMzhkZDA3MSJ9.rfTPCbhWKTck79iYnF3iwp6MvWSOCAxIBPwmcEYKi1s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"restaurant_id\":\"a6010065-d26d-45e0-b3b8-8a50281a0f88\",\n    \"seat_name\":\"A4\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/add-seat/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"add-seat",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Seats",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgyNzQzLCJpYXQiOjE2NDQ0MDk5NDMsImp0aSI6IjYyOTM3NjlmZTVjYzQzYmJiZWE4MTMwYmIzYzJiYTI2IiwidXNlcl9pZCI6ImJjOTE3Y2FkLWE2MWUtNGZkYi1hNjIzLTdmZmZhMzhkZDA3MSJ9.rfTPCbhWKTck79iYnF3iwp6MvWSOCAxIBPwmcEYKi1s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"restaurant_id\":\"a6010065-d26d-45e0-b3b8-8a50281a0f88\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/get-seats/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"get-seats",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Seat Details",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgyNzQzLCJpYXQiOjE2NDQ0MDk5NDMsImp0aSI6IjYyOTM3NjlmZTVjYzQzYmJiZWE4MTMwYmIzYzJiYTI2IiwidXNlcl9pZCI6ImJjOTE3Y2FkLWE2MWUtNGZkYi1hNjIzLTdmZmZhMzhkZDA3MSJ9.rfTPCbhWKTck79iYnF3iwp6MvWSOCAxIBPwmcEYKi1s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seat_name\":\"A11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seat/c4f5c6a8-72b8-4f12-b1a9-fe9fdb5353a6/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seat",
+										"c4f5c6a8-72b8-4f12-b1a9-fe9fdb5353a6",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Seat",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgyNzQzLCJpYXQiOjE2NDQ0MDk5NDMsImp0aSI6IjYyOTM3NjlmZTVjYzQzYmJiZWE4MTMwYmIzYzJiYTI2IiwidXNlcl9pZCI6ImJjOTE3Y2FkLWE2MWUtNGZkYi1hNjIzLTdmZmZhMzhkZDA3MSJ9.rfTPCbhWKTck79iYnF3iwp6MvWSOCAxIBPwmcEYKi1s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"seat_name\":\"A11\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seat/c4f5c6a8-72b8-4f12-b1a9-fe9fdb5353a6/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seat",
+										"c4f5c6a8-72b8-4f12-b1a9-fe9fdb5353a6",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "View Bookings",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgyNzQzLCJpYXQiOjE2NDQ0MDk5NDMsImp0aSI6IjYyOTM3NjlmZTVjYzQzYmJiZWE4MTMwYmIzYzJiYTI2IiwidXNlcl9pZCI6ImJjOTE3Y2FkLWE2MWUtNGZkYi1hNjIzLTdmZmZhMzhkZDA3MSJ9.rfTPCbhWKTck79iYnF3iwp6MvWSOCAxIBPwmcEYKi1s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/previous-bookings/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"previous-bookings",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Modify Orders",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ0NTgyNzQzLCJpYXQiOjE2NDQ0MDk5NDMsImp0aSI6IjYyOTM3NjlmZTVjYzQzYmJiZWE4MTMwYmIzYzJiYTI2IiwidXNlcl9pZCI6ImJjOTE3Y2FkLWE2MWUtNGZkYi1hNjIzLTdmZmZhMzhkZDA3MSJ9.rfTPCbhWKTck79iYnF3iwp6MvWSOCAxIBPwmcEYKi1s",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"order_id\":\"b0a3ae70-2ff0-4c94-8d96-edf54ce2dddb\",\n    \"is_completed\":true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/seller-update-orders/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"seller-update-orders",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
