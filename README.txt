@@ -125,6 +125,10 @@ The docs folder contain all the project documentations and screenshots of the pr
 
 **Local Server Base Link :** http://localhost:8000/
 
+**Deployment Server Base Link :** https://inspiration-2021-backend.herokuapp.com/
+
+**Complete Code Link :** https://github.com/InspirusDBCE/TeamDelta_Inspirus2021
+
 **Admin Pannel Access :**
 - ***Email :*** "admin@admin.com"
 - ***Password :*** "password"
