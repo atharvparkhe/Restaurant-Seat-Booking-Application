@@ -10,6 +10,7 @@ Customer authentication is done using *JWT (JSON Web Token)*. Database used is *
 * [Content](#-content)
 * [Event Overview](#-event-overview)
 * [Team](#-team)
+* [Problem Statement](#-problem-statement)
 * [Features](#-features)
 * [Tech Stack](#-tech-stack)
 * [API Reference](#-api-reference)
@@ -38,6 +39,10 @@ We build an android application for customers to book seats in the Restaurant, a
 
 - `Akash Sanjeev` -  *Java* - [LinkedIn](https://www.linkedin.com/in/akash-sanjeev-37436a1b5/), [GitHub](https://github.com/AkashCSanjeev)  -  Android Developer (Frontend)  
 
+
+### 📃 Problem Statement
+
+![Problem Statement](PROBLEM_STATEMENT.png)
 
 ### 📋 Features
 
@@ -141,17 +146,17 @@ python manage.py runserver
 
 ### 📄 Documentation
 
-The docs folder contain all the project documentations and screenshots of the project.
+The docs folder contain all the project documentations and screenshots of the project.You can go through the presentation [here](presentaion.pptx)
 
-**Local Server Base Link :** http://localhost:8000/
+- **Server Link**
+    - **Local Server Base Link :** http://localhost:8000/
+    - **Deployment Server Base Link :** https://inspiration-2021-backend.herokuapp.com/
 
-**Deployment Server Base Link :** https://inspiration-2021-backend.herokuapp.com/
+- **Complete Code Link :** https://github.com/InspirusDBCE/TeamDelta_Inspirus2021
 
-**Complete Code Link :** https://github.com/InspirusDBCE/TeamDelta_Inspirus2021
-
-**Admin Pannel Access :**
-- ***Email :*** "admin@admin.com"
-- ***Password :*** "password"
+- **Admin Pannel Access :**
+    - ***Email :*** "admin@admin.com"
+    - ***Password :*** "password"
 
 - **Frontend Section :**
     - `Customer Application`
