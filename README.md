@@ -6,29 +6,25 @@ Customer authentication is done using *JWT (JSON Web Token)*. Database used is *
 
 ### 🔗 Content
 
-* [Overview](#restaurant-seat-booking-system)
-* [Content](#-content)
-* [Event Overview](#-event-overview)
-* [Team](#-team)
-* [Problem Statement](#-problem-statement)
-* [Features](#-features)
-* [Tech Stack](#-tech-stack)
-* [API Reference](#-api-reference)
-* [Environment Variables](#-environment-variables)
-* [Run Locally](#-run-locally)
-* [Documentation](#-documentation)
-* [Demo](#-demo)
-* [Screen-Shots](#-screen-shots)
-* [Author](#-author)
+- [Overview](#restaurant-seat-booking-system)
+- [Content](#-content)
+- [Event Overview](#-event-overview)
+- [Team](#-team)
+- [Problem Statement](#-problem-statement)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [API Reference](#-api-reference)
+- [Environment Variables](#-environment-variables)
+- [Run Locally](#-run-locally)
+- [Documentation](#-documentation)
+- [Screen-Shots](#-screen-shots)
+- [Author](#-author)
 
 
 ### 🧬 Event Overview
 
 Me and my team participated in our first ever Hackathon event at [Inspirus](https://www.linkedin.com/feed/hashtag/?keywords=inspirus2k21) in October 2021 at [Don Bosko College of Engineering, Goa](https://www.linkedin.com/school/don-bosco-college-of-engineering-fatorda-goa/). 
-Me along with [Akash Sanjeev](https://www.linkedin.com/in/akash-sanjeev-37436a1b5/) and [Sachin Padwalkar](https://www.linkedin.com/in/sachin-padwalkar-a265291ba/) had participated as a team, where I was working on [Django application](https://github.com/atharvparkhe/restaurant-seat-booking) (Backend), Saching was handling [React application](https://github.com/Sachin9822/restu) (Frontend) and Akash was handling [Androind application](https://github.com/AkashCSanjeev/Be-Seated) (Frontend).
-
-We were working on Restaurant Seat Booking Management System.
-We build an android application for customers to book seats in the Restaurant, and a react based web application for restaurant owners to manage bookings.
+Me along with [Akash Sanjeev](https://www.linkedin.com/in/akash-sanjeev-37436a1b5/) and [Sachin Padwalkar](https://www.linkedin.com/in/sachin-padwalkar-a265291ba/) had participated as a team, where I was working on [Django application](https://github.com/atharvparkhe/restaurant-seat-booking) (Backend), Saching was handling [React application](https://github.com/Sachin9822/restu) (Frontend) for the Administration Section and Akash was handling [Androind application](https://github.com/AkashCSanjeev/Be-Seated) (Frontend).
 
 
 ### 👨‍👦‍👦 Team
@@ -72,7 +68,7 @@ We build an android application for customers to book seats in the Restaurant, a
 
 ### 🛠 API Reference
 
-**Postman Endpoints** : https://www.getpostman.com/collections/fba7d6a7ef874e693551
+**Postman Endpoints** : https://www.getpostman.com/collections/66bf66e50ebe0f8f60c3
 
 ![Endpoints](docs/endpoints-customer.png)
 ![Endpoints](docs/endpoints-seller.png)
@@ -165,11 +161,6 @@ The docs folder contain all the project documentations and screenshots of the pr
     - `Seller Dashboard `
         - **Code :** https://github.com/Sachin9822/Resturant-Management-system
         - **Author :** Akash Sanjeev - [GitHub](https://github.com/Sachin9822), [LinkedIn](https://www.linkedin.com/in/sachin-padwalkar-a265291ba/)
-
-
-### 🧑🏻‍💻 Demo
-
-YouTube Link : 
 
 
 ### 🌄 Screen-Shots
